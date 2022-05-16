@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.25;
+  -webkit-font-smoothing: antialiased;
+}
+
+//tester
+p {
+  color: blue;
+}
