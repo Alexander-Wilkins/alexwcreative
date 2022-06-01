@@ -9,13 +9,43 @@
   </head>
   <body>
     <main>
-      <h1>Welcome to my website!...</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-        laudantium, commodi iusto consequuntur earum deserunt ex, ducimus rem
-        porro nisi impedit cupiditate suscipit voluptatem voluptate aliquid
-        expedita eveniet perspiciatis error?
-      </p>
+      <div class="box">
+        <h1 class="title-box">
+          The <span class="tilted-m">M</span>isadventures of a Self-Taught
+          <br />
+          Web Developer
+        </h1>
+        <p class="description-p">
+          Hello, my name is Alex Wilkins. As of today on
+          <strong id="displayDateTime"><em>{today's date}</em></strong> This is
+          the first interation of my personal website,
+          <a href="#" class="links">AlexWCreative.com</a>! An ever growing
+          project where I continually log my progress as a web developer.
+        </p>
+      </div>
     </main>
   </body>
+  <script type="text/javascript">
+    let today = new Date();
+    let day = today.getDay();
+    let daylist = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday ",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ];
+    let date =
+      today.getMonth() + 1 + "/" + today.getDate() + "/" + today.getFullYear();
+    let time =
+      today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    let dateTime = date;
+
+    document.getElementById("displayDateTime").innerHTML =
+      daylist[day] + dateTime;
+  </script>
+
+  <footer></footer>
 </html>

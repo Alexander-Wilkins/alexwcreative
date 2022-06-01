@@ -1,6 +1,13 @@
 @import "globals";
+@import "details";
+@import "variables";
 
-//tester
-h1 {
-  color: red;
+.title-box {
+  color: $base-color;
+  margin-bottom: 16px;
+  line-height: 200px;
+}
+
+.box {
+  padding: 1.5rem;
 }
