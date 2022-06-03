@@ -4,48 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/a1f3ebd84f.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="/dist/css/styles.css" />
     <title>AlexWCreative</title>
   </head>
   <body>
+    <nav class="box navbar-style flex-h">
+      <div class="navbar-logo">
+        <a href="#">
+          <img
+            class="awlogo"
+            src="/assets/image/awcreative-logo.png"
+            alt="alex w creative logo"
+          />
+        </a>
+      </div>
+      <div class="hamburger-menu tooltip">
+        <i class="fa-solid fa-burger nav-burger-icon"></i>
+        <span class="tooltiptext">Coming Soon!</span>
+      </div>
+    </nav>
     <main>
-      <div class="box">
+      <div id="post" class="box">
         <h1 class="title-box">
           The <span class="tilted-m">M</span>isadventures of a Self-Taught
           <br />
           Web Developer
         </h1>
+        <div class="post-data">
+          <em>{author} / {date-created} / {read-time}</em>
+        </div>
         <p class="description-p">
-          Hello, my name is Alex Wilkins. As of today on
-          <strong id="displayDateTime"><em>{today's date}</em></strong> This is
-          the first interation of my personal website,
+          Hello, my name is <strong>Alex Wilkins</strong>. Today's date is
+          <strong id="displayDateTime"><em>{today's date}</em></strong> this is
+          an interation of my personal website,
           <a href="#" class="links">AlexWCreative.com</a>! An ever growing
-          project where I continually log my progress as a web developer.
+          project where I continually log my progress as a web developer with
+          the goal of one day becoming a full stack developer.
         </p>
       </div>
     </main>
+    <script src="/js/main.js"></script>
   </body>
-  <script type="text/javascript">
-    let today = new Date();
-    let day = today.getDay();
-    let daylist = [
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday ",
-      "Thursday",
-      "Friday",
-      "Saturday",
-    ];
-    let date =
-      today.getMonth() + 1 + "/" + today.getDate() + "/" + today.getFullYear();
-    let time =
-      today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    let dateTime = date;
-
-    document.getElementById("displayDateTime").innerHTML =
-      daylist[day] + dateTime;
-  </script>
 
   <footer></footer>
 </html>

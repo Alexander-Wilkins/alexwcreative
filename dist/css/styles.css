@@ -25,6 +25,12 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f4dd04",endColorstr="#f4bb00",GradientType=1);
 }
 
+.flex-h {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .tilted-m {
   display: inline-block;
   -webkit-transform: rotate(353deg);
@@ -58,13 +64,106 @@ body {
   transition: background-size 400ms ease-in-out;
 }
 
+.hamburger-menu {
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: 0;
+  border: 2px solid rgba(255, 255, 255, 0.418);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hamburger-menu:hover {
+  background-color: rgba(255, 238, 0, 0.493);
+}
+
+.hamburger-menu .nav-burger-icon {
+  padding: 0 4px;
+  display: inline-block;
+  -webkit-transform: rotate(7deg);
+          transform: rotate(7deg);
+}
+
+.awlogo {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  height: 40px;
+  display: inline-block;
+  -webkit-transform: rotate(354deg);
+          transform: rotate(354deg);
+}
+
+.awlogo:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  cursor: pointer;
+}
+
+.navbar-style {
+  background-color: black;
+  color: #fff;
+  font-weight: 700;
+}
+
 .title-box {
   color: black;
-  margin-bottom: 16px;
-  line-height: 200px;
+  margin-bottom: 12px;
+  font-size: 27pt;
+  font-weight: 900;
 }
 
 .box {
-  padding: 1.5rem;
+  width: 380px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px auto;
+  padding: 0.75rem;
+  border: solid black;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.178);
+          box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.178);
+}
+
+.post-data {
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /* tooltip box */
+  /* tiny tooltip right arrow */
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  padding: 3px 0;
+  position: absolute;
+  z-index: 1;
+  top: 4px;
+  right: 125%;
+  font-size: 16px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -7px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent transparent transparent red;
+}
+
+.tooltip.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 /*# sourceMappingURL=styles.css.map */
