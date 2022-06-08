@@ -17,7 +17,7 @@
     max-width: 240px;
     margin: 0 auto;
     &:hover {
-      background-color: #ff3e00;
+      background-color: #d9ff00;
     }
   }
 
