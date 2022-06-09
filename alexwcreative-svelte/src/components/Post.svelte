@@ -1,10 +1,11 @@
-<script>
-import { dateOfToday } from "scriptsdom-manip.js";
-import Navbar from "./Navbar.svelte";
+<script context="module">
+  import { todayDate } from "../../scripts/dom-manip";
 </script>
 
 <script>
-    
+  let author = "Alex Wilkins";
+
+  console.log("Post has been posted...🐠");
 </script>
 
 <div id="post" class="box">
@@ -14,7 +15,7 @@ import Navbar from "./Navbar.svelte";
     Web Developer
   </h1>
   <div class="post-data">
-    <em>author / date - created / read - time</em>
+    <em>{author} / date - created / read - time</em>
   </div>
   <p class="description-p">
     Hello, my name is <strong>Alex Wilkins</strong>. Today's date is
