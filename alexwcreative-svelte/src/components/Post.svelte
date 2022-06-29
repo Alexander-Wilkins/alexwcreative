@@ -1,10 +1,9 @@
 <script context="module">
-  import { todayDate } from "../../scripts/dom-manip";
+  import { todaysDate } from "../../scripts/dom-manip";
 </script>
 
 <script>
   let author = "Alex Wilkins";
-
   console.log("Post has been posted...🐠");
 </script>
 
@@ -19,7 +18,7 @@
   </div>
   <p class="description-p">
     Hello, my name is <strong>Alex Wilkins</strong>. Today's date is
-    <strong id="displayDateTime"><em>{todayDate}</em></strong> this is an
+    <strong id="displayDateTime"><em>{todaysDate}</em></strong>. This is an
     interation of my personal website,
     <a href="#" class="links">AlexWCreative.com</a>! An ever growing project
     where I continually log my progress as a web developer with the goal of one
