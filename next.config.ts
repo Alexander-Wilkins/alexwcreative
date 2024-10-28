@@ -1,8 +1,9 @@
 import type { NextConfig } from "next";
-import svgr from "@svgr/webpack";
+
+const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig: NextConfig = {
-  basePath: "/alexwcreative",
+  basePath: isProd ? "/alexwcreative": "",
   distDir: "dist",
   output: "export", // This will generate static HTML files
   reactStrictMode: true,
