@@ -1,0 +1,78 @@
+@import "variables";
+
+.flex-h {
+  display: flex;
+}
+
+.tilted-m {
+  display: inline-block;
+  transform: rotate(353deg);
+
+  &:hover {
+    transform: rotate(360deg);
+    cursor: pointer;
+  }
+  //   color: red;
+}
+
+.description-p {
+  color: $base-color;
+}
+
+.links {
+  font-weight: 700;
+  color: $base-color;
+  text-decoration: none;
+  background: linear-gradient(
+      to right,
+      rgba(100, 200, 200, 1),
+      rgb(100, 140, 200)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+    );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+
+  &:hover {
+    background-size: 0 3px, 100% 3px;
+    // color: white;
+    transition: background-size 400ms ease-in-out;
+  }
+}
+
+.hamburger-menu {
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: 0;
+  border: 2px solid rgba(255, 255, 255, 0.418);
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(255, 238, 0, 0.493);
+  }
+
+  .nav-burger-icon {
+    padding: 0 4px;
+    display: inline-block;
+    transform: rotate(7deg);
+  }
+}
+
+.awlogo {
+  // color: red;
+  filter: brightness(0) invert(1);
+  height: 40px;
+  display: inline-block;
+  transform: rotate(354deg);
+
+  &:hover {
+    transform: rotate(360deg);
+    cursor: pointer;
+  }
+}
