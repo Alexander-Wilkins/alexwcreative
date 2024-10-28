@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import BlueSkyBackground from "@/components/BlueSkyBackground";
-import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Alex Wilkins - Web Developer",
