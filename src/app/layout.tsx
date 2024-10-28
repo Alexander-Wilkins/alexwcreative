@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import BlueSkyBackground from "@/components/BlueSkyBackground";
 
 export const metadata: Metadata = {
-  title: "Alex Wilkins - Web Developer",
+  title: "Alex W. - Web Developer",
   description: "Open sky developer.",
 };
 
@@ -36,7 +35,6 @@ export default function RootLayout({
         <link rel="manifest" href="/alexwcreative/site.webmanifest" />
       </head>
       <body className={`antialiased`}>
-        <BlueSkyBackground />
         {children}
       </body>
     </html>
