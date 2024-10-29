@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Alex W. - Web Developer",
@@ -34,8 +35,13 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-title" content="AlexWCreative" />
         <link rel="manifest" href="/alexwcreative/site.webmanifest" />
       </head>
-      <body className={`antialiased`}>
-        {children}
+      <body>
+        <div id="page-container" className="relative min-h-[100vh]">
+          <div id="content-wrap" className="pb-6">
+            {children}
+            <Footer />
+          </div>
+        </div>
       </body>
     </html>
   );
