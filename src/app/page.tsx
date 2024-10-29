@@ -21,7 +21,7 @@ export default function Home() {
           </h1>
         </header>
         <Navbar />
-        <main>content</main>
+        <main className="text-white p-4">website is a WIP currently...</main>
       </Window>
       <BlueSkyBackground />
     </div>
