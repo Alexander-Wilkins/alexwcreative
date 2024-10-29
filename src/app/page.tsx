@@ -7,8 +7,10 @@ import Window from "@/components/Window";
 
 export default function Home() {
   return (
-    <div className="">
-      <Window size="inline-block">
+    <div
+      style={{ overflow: "hidden", width: "100vw", height: "99vh" }}
+    >
+      <Window size="w-[23rem] sm:w-[67rem] sm:inline-block">
         <header
           id="blue-bar"
           className="flex flex-row gap-2 p-2 bg-gradient-to-t from-xp-blue from-17% via-xp-blue via-27% to-[#eff2fa67] rounded-t-xl"

@@ -23,7 +23,7 @@ export default function Window({ children, size }: WindowProps) {
       <div
         ref={nodeRef}
         id="window-container"
-        className={`rounded-xl bg-[#0038FF] border-solid border-2 border-xp-blue ${size} mt-10 ml-10`} // the margin creates a default window position
+        className={`rounded-xl bg-[#0038FF] border-solid border-2 border-xp-blue ${size} mt-10 ml-4`} // the margin creates a default window position
       >
         {children}
       </div>

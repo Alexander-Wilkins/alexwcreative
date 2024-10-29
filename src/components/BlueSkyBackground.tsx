@@ -14,7 +14,7 @@ return (
             style={{
                 objectFit: "cover",
             }}
-            className="-z-10"
+            className="-z-10 "
         />
     </div>
 );
