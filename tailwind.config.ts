@@ -40,6 +40,9 @@ const config: Config = {
         "ms-hot-pink": "#FF2574",
         "ms-dark-orange": "#8B510D",
         "ms-orange": "#FF9432",
+        "ms-bronze-ui": "#ECE9D8",
+        "ms-light-bronze-ui": "#FFFCEA",
+        "ms-bronze-bg-ui": "#6C6C6C"
       },
     },
   },
