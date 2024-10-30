@@ -5,6 +5,9 @@ import Navbar from "@/components/Navbar";
 import { vt323 } from "@/fonts";
 import Window from "@/components/Window";
 import WindowButtons from "@/components/WindowButtons";
+import Canvas from "@/components/Canvas";
+import Tools from "@/components/Tools";
+import ColorPalette from "@/components/ColorPalette";
 
 export default function Home() {
   return (
@@ -25,23 +28,18 @@ export default function Home() {
           <WindowButtons />
         </header>
         <Navbar />
-        <main className="bg-ms-bronze-bg-ui relative h-full w-full grid grid-rows-[auto_1fr_auto] grid-cols-[auto_1fr]" > 
-            
+        <main className="bg-ms-bronze-bg-ui relative h-full w-full grid grid-rows-[auto_1fr_auto] grid-cols-[auto_1fr]">
           <div
             id="left-container"
             className="bg-ms-bronze-ui w-[7.375rem] border-ms-bronze-bg-ui border-[1px] pl-[0.65rem] h-full"
           >
-            balh
-            <div
-              id="tan-box"
-              className="h-[10.3125rem] w-[5.8125rem] block bg-[#FFFCEA] border-solid border-t-[1px] border-l-[1px] border-ms-bronze-bg-ui border-r-white border-b-white"
-            ></div>
+            <Tools />
           </div>
           <div id="right-container" className="">
-            <div id="drawing-canvas" className="bg-white mt-1 ml-1">drawing area</div>
+            <Canvas />
           </div>
-          <div id="color-palettes" className="">
-            <div>color-palettes</div>
+          <div id="bottom-container" className="col-span-2">
+            <ColorPalette />
           </div>
         </main>
       </Window>
