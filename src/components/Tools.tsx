@@ -4,7 +4,7 @@ export default function Tools() {
   const toolButtonStyles =
     "h-10 w-10 rounded-sm active:bg-white active:border-solid active:border-[#0058ab9f] active:border-[1px] hover:bg-[#d6cfb1]";
   return (
-    <div>
+    <div className="flex flex-col h-full justify-between">
       <div id="button-container" className="grid grid-cols-2 pt-2">
         <button className={`${toolButtonStyles}`}>a</button>
         <button className={`${toolButtonStyles}`}>b</button>
