@@ -24,6 +24,7 @@ export default function Window({ children, size }: WindowProps) {
   };
 
   return (
+    // TODO: Make only the header bar draggable, and prevent draggable for any other parts of the window.
     <Draggable
       nodeRef={nodeRef}
       position={position}
