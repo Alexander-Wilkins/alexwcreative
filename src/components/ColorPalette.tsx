@@ -38,15 +38,15 @@ export default function ColorPalette() {
       <div className="flex flex-row gap-2 bg-ms-bronze-ui p-2">
         <div
           id="tan-box"
-          className="h-20 w-20 border-[1px] border-solid border-ms-bronze-bg-ui border-b-white border-r-white"
+          className="h-16 w-16 border-[1px] border-solid border-ms-bronze-bg-ui border-b-white border-r-white"
         >
           <div
             id="primary-color"
-            className={`relative left-2 top-2 z-10 h-[2.3rem] w-[2.3rem] border-[1px] border-b-white border-l-black border-r-white border-t-black bg-black`}
+            className={`relative left-2 top-2 z-10 h-[1.75rem] w-[1.75em] border-[1px] border-b-white border-l-black border-r-white border-t-black bg-black`}
           ></div>
           <div
             id="secondary-color"
-            className={`relative -top-1 left-8 h-[2.3rem] w-[2.3rem] border-[1px] border-b-white border-l-black border-r-white border-t-black bg-white`}
+            className={`relative -top-1 left-6 h-[1.75rem] w-[1.75em] border-[1px] border-b-white border-l-black border-r-white border-t-black bg-white`}
           ></div>
         </div>
         <div
@@ -56,7 +56,7 @@ export default function ColorPalette() {
           {Object.entries(colors).map(([colorName, colorValue]) => (
             <div
               key={colorName}
-              className={`h-[2.3rem] w-[2.3rem] border-[1px] border-b-white border-l-black border-r-white border-t-black`}
+              className={`h-[1.75rem] w-[1.75em] border-[1px] border-b-white border-l-black border-r-white border-t-black`}
               style={{ backgroundColor: colorValue }}
             ></div>
           ))}
