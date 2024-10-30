@@ -15,9 +15,9 @@ export default function Home() {
       <Window size="w-[23rem] sm:w-[67rem] sm:inline-block ">
         <header
           id="blue-bar"
-          className="flex flex-row gap-2 pl-3 bg-gradient-to-t from-xp-blue from-17% via-xp-blue via-27% to-[#eff2fa67] rounded-t-xl justify-between"
+          className="from-17% via-27% flex flex-row justify-between gap-2 rounded-t-xl bg-gradient-to-t from-xp-blue via-xp-blue to-[#eff2fa67] pl-3"
         >
-          <div className="flex flex-row gap-2 items-center justify-center">
+          <div className="flex flex-row items-center justify-center gap-2">
             <Image src={msPaintIcon} alt="MS Paint Icon" height={32} />
             <h1
               className={`text-white ${vt323.className} text-2xl drop-shadow-md`}
@@ -28,10 +28,10 @@ export default function Home() {
           <WindowButtons />
         </header>
         <Navbar />
-        <main className="bg-ms-bronze-bg-ui relative h-full w-full grid grid-rows-[auto_1fr_auto] grid-cols-[auto_1fr]">
+        <main className="relative grid h-full w-full grid-cols-[auto_1fr] grid-rows-[auto_1fr_auto] bg-ms-bronze-bg-ui">
           <div
             id="left-container"
-            className="bg-ms-bronze-ui w-[7.375rem] border-ms-bronze-bg-ui border-[1px] pl-[0.65rem] h-full"
+            className="h-full w-[7.375rem] border-[1px] border-ms-bronze-bg-ui bg-ms-bronze-ui pl-[0.65rem]"
           >
             <Tools />
           </div>

@@ -17,7 +17,7 @@ export default function Tools() {
       </div>
       <div
         id="tan-box"
-        className="my-12 block h-[10.3125rem] w-[5.8125rem] border-l-[1px] border-t-[1px] border-solid border-ms-bronze-bg-ui border-b-white border-r-white bg-[#FFFCEA]"
+        className="my-12 block h-[10.3125rem] w-[5.8125rem] border-[1px] border-solid border-ms-bronze-bg-ui border-b-white border-r-white bg-[#FFFCEA]"
       ></div>
     </div>
   );
