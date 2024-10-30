@@ -51,7 +51,7 @@ export default function ColorPalette() {
         </div>
         <div
           id="colors-container"
-          className="grid auto-cols-auto grid-flow-col grid-rows-3 gap-1"
+          className="grid auto-cols-auto grid-flow-col grid-rows-3 sm:grid-rows-2 gap-1"
         >
           {Object.entries(colors).map(([colorName, colorValue]) => (
             <div
