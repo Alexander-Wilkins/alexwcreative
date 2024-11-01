@@ -13,7 +13,7 @@ export default function Home() {
         <main className="relative grid h-full w-full grid-cols-[auto_1fr] grid-rows-[auto_1fr_auto] bg-ms-bronze-bg-ui">
           <div
             id="left-container"
-            className="w-[7.375rem] border-[1px] border-ms-bronze-bg-ui bg-ms-bronze-ui pl-[0.65rem]"
+            className="w-[5.5rem] border-[1px] border-ms-bronze-bg-ui bg-ms-bronze-ui pl-[0.65rem]"
           >
             <Tools />
           </div>

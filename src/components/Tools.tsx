@@ -19,7 +19,7 @@ import Image from "next/image";
 
 export default function Tools() {
   const toolButtonStyles =
-    "h-8 w-8 rounded-sm active:bg-white active:border-solid active:border-[#0058ab9f] active:border-[1px] hover:bg-[#d6cfb1] ml-1";
+    "h-8 w-8 rounded-sm active:bg-white active:border-solid active:border-[#0058ab9f] active:border-[1px] hover:bg-[#d6cfb1]";
     // store the images in an object
     const buttonIcons = {
       select1,
@@ -50,7 +50,7 @@ export default function Tools() {
       </div>
       <div
         id="tan-box"
-        className="my-12 block h-[10.3125rem] w-[5.8125rem] border-[1px] border-solid border-ms-bronze-bg-ui border-b-white border-r-white bg-[#FFFCEA]"
+        className="my-12 block h-[10.3125rem] w-[4rem] border-[1px] border-solid border-ms-bronze-bg-ui border-b-white border-r-white bg-[#FFFCEA]"
       ></div>
     </div>
   );
