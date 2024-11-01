@@ -1,6 +1,35 @@
+'use client';
 import { vt323 } from "@/fonts";
 
 export default function Navbar() {
+
+  const fileDropdown = [
+    {
+      label: "New...",
+      action: () => alert("New File created!"),
+    }, 
+    {
+      label: "Save",
+      action: () => console.log("Feature coming soon!"),
+    },
+    {
+      label: "Save As...",
+      action: () => console.log("Feature coming soon!"),
+    },
+    {
+      label: "Print",
+      action: () => console.log("Feature coming soon!"),
+    },
+    {
+      label: "Restore",
+      action: () => alert("Restore"),
+    },
+    {
+      label: "Close Window",
+      action: () => console.log("Exit"),
+    }
+  ]
+
   return (
     <div>
       <nav className="border-[1px] border-x-ms-bronze-bg-ui border-t-ms-bronze-bg-ui bg-ms-bronze-ui">
@@ -20,18 +49,16 @@ export default function Navbar() {
               id="dropdown-content"
               className="absolute z-10 hidden min-w-40 border-[1px] border-solid border-ms-bronze-bg-ui bg-ms-bronze-ui hover:cursor-pointer group-hover:block"
             >
-              <a
-                href="#"
-                className="block px-2 py-[3px] hover:bg-ms-light-gray"
-              >
-                Linky Dinky 1
-              </a>
-              <a href="#" className="block px-2 py-[3px] hover:bg-ms-light-gray">
-                Linky Dinky 2
-              </a>
-              <a href="#" className="block px-2 py-[3px] hover:bg-ms-light-gray">
-                Linky Dinky 3
-              </a>
+                {fileDropdown.map((item, index) => (
+                <a
+                  key={index}
+                  href="#"
+                  className="block px-2 py-[3px] hover:bg-ms-light-gray cursor-pointer"
+                  onClick={item.action}
+                >
+                  {item.label}
+                </a>
+                ))}
             </div>
           </li>
           <li className="cursor-pointer px-4 hover:bg-ms-light-gray">
