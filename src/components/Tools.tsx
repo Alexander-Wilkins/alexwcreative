@@ -41,7 +41,7 @@ export default function Tools() {
     };
   return (
     <div className="flex flex-col h-full justify-between">
-      <div id="button-container" className="grid grid-cols-2 pt-2">
+      <div id="button-container" className="grid grid-cols-2 pt-2 -ml-[.125rem]">
         {Object.values(buttonIcons).map((icon, index) => (
           <button key={index} className={`${toolButtonStyles} flex flex-col items-center justify-center hover:cursor-pointer`}>
             <Image src={icon} alt={`tool-icon-${index}`} />
