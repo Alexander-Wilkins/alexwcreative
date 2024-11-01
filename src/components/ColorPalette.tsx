@@ -42,11 +42,11 @@ export default function ColorPalette() {
         >
           <div
             id="primary-color"
-            className={`relative left-2 top-2 z-10 h-[1.125rem] w-[1.125rem] border-[1px] border-b-white border-l-black border-r-white border-t-black bg-black sm:h-[1.5rem] sm:w-[1.5em]`}
+            className={`relative left-2 top-2 z-10 h-[1.25rem] w-[1.25rem] border-[1px] border-b-white border-l-black border-r-white border-t-black bg-black sm:h-[1.5rem] sm:w-[1.5em]`}
           ></div>
           <div
             id="secondary-color"
-            className={`relative left-5 h-[1.5rem] w-[1.5rem] border-[1px] border-b-white border-l-black border-r-white border-t-black bg-white sm:-top-1 sm:left-6 sm:h-[1.5rem] sm:w-[1.5em]`}
+            className={`relative left-5 h-[1.25rem] w-[1.25rem] border-[1px] border-b-white border-l-black border-r-white border-t-black bg-white sm:-top-1 sm:left-6 sm:h-[1.5rem] sm:w-[1.5em]`}
           ></div>
         </div>
         <div

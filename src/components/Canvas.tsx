@@ -4,7 +4,7 @@ import mainDrawing from "@/assets/imgs/main-page.png";
 export default function Canvas() {
   return (
     <div>
-    <div id="drawing-canvas" className="bg-white mt-4 ml-4 mb-20 inline-block p-10" style={{ position: 'relative' }}>
+    <div id="drawing-canvas" className="bg-white mt-2 ml-2 sm:mt-4 sm:ml-4 mb-20 inline-block p-4 sm:p-10" style={{ position: 'relative' }}>
         <div style={{ position: 'absolute', top: -4, left: -4, width: '4px', height: '4px', backgroundColor: '#f5efef', border: '1px solid #8498df' }}></div>
         <div style={{ position: 'absolute', top: -4, right: -4, width: '4px', height: '4px', backgroundColor: '#f5efef', border: '1px solid #8498df' }}></div>
         <div style={{ position: 'absolute', bottom: -4, left: -4, width: '4px', height: '4px', backgroundColor: '#f5efef', border: '1px solid #8498df' }}></div>
