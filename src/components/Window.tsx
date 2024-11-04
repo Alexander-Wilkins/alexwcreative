@@ -1,8 +1,8 @@
 "use client";
 
 import { ReactNode, useRef } from "react";
-import React, { useState } from "react";
-import Draggable from "react-draggable";
+// import React, { useState } from "react";
+// import Draggable from "react-draggable";
 import Image from "next/image";
 import msPaintIcon from "@/assets/logos/ms-paint-icon.png";
 import WindowButtons from "@/components/WindowButtons";
