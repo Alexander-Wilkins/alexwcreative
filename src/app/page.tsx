@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="h-[99vh] w-screen overflow-hidden">
       {/* TODO: Make this an MSPaint Component, so that "Windows" are their own thing */}
-      <Window size="w-[23rem] sm:w-[67rem]" title="alexwcreative.com">
+      <Window size="w-[23rem] sm:w-[67rem]" defaultPos="ml-10 mt-10" title="alexwcreative.com">
         <Navbar />
         <main className="relative grid h-full w-full grid-cols-[auto_1fr] grid-rows-[auto_1fr_auto] bg-ms-bronze-bg-ui">
           <div
