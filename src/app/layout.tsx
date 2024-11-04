@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/Footer";
+import BlueSkyBackground from "@/components/BlueSkyBackground";
 
 export const metadata: Metadata = {
   title: "Alex W. - Web Developer",
@@ -36,9 +37,10 @@ export default function RootLayout({
         <link rel="manifest" href="/alexwcreative/site.webmanifest" />
       </head>
       <body>
-        <div id="page-container" className="relative min-h-[100vh]">
-          <div id="content-wrap" className="pb-6">
+        <div id="page-container" className="relative min-h-[100vh] overflow-hidden">
+          <div id="content-wrap">
             {children}
+            <BlueSkyBackground />
             <Footer />
           </div>
         </div>

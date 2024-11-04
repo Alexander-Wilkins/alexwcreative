@@ -1,4 +1,3 @@
-import BlueSkyBackground from "@/components/BlueSkyBackground";
 import Navbar from "@/components/Navbar";
 import Window from "@/components/Window";
 import Canvas from "@/components/Canvas";
@@ -7,11 +6,11 @@ import ColorPalette from "@/components/ColorPalette";
 
 export default function Home() {
   return (
-    <div className="h-[99vh] w-screen overflow-hidden">
+    <div className="">
       {/* TODO: Make this an MSPaint Component, so that "Windows" are their own thing */}
       <Window
         size="w-[23rem] sm:w-[67rem]"
-        defaultPos="ml-10 mt-10"
+        defaultPos="ml-8 sm:ml-[23.125rem] sm:mt-10"
         title="alexwcreative.com"
       >
         <Navbar />
@@ -32,7 +31,6 @@ export default function Home() {
           </div>
         </main>
       </Window>
-      <BlueSkyBackground />
     </div>
   );
 }

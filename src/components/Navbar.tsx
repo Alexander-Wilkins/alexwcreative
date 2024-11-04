@@ -1,24 +1,25 @@
-'use client';
+"use client";
 import { vt323 } from "@/fonts";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
-
   const fileDropdown = [
     {
       label: "New...",
       action: () => alert("New File created!"),
-    }, 
+    },
     {
       label: "Save",
-      action: () => console.log("Feature coming soon!"),
+      action: () => alert("Feature coming soon!"),
     },
     {
       label: "Save As...",
-      action: () => console.log("Feature coming soon!"),
+      action: () => alert("Feature coming soon!"),
     },
     {
       label: "Print",
-      action: () => console.log("Feature coming soon!"),
+      action: () => alert("Feature coming soon!"),
     },
     {
       label: "Restore",
@@ -26,9 +27,9 @@ export default function Navbar() {
     },
     {
       label: "Close Window",
-      action: () => console.log("Exit"),
-    }
-  ]
+      action: () => alert("Exit"),
+    },
+  ];
 
   return (
     <div>
@@ -49,23 +50,29 @@ export default function Navbar() {
               id="dropdown-content"
               className="absolute z-10 hidden min-w-40 border-[1px] border-solid border-ms-bronze-bg-ui bg-ms-bronze-ui hover:cursor-pointer group-hover:block"
             >
-                {fileDropdown.map((item, index) => (
-                <a
+              {fileDropdown.map((item, index) => (
+                <Link
                   key={index}
                   href="#"
-                  className="block px-2 py-[3px] hover:bg-ms-light-gray cursor-pointer"
+                  className="block cursor-pointer px-2 py-[3px] hover:bg-ms-light-gray"
                   onClick={item.action}
                 >
                   {item.label}
-                </a>
-                ))}
+                </Link>
+              ))}
             </div>
           </li>
-          <li className="cursor-pointer px-4 hover:bg-ms-light-gray">
-            <u>A</u>bout Me
+          <li
+            className={`cursor-pointer px-4 ${usePathname() === "/" ? "bg-ms-light-gray text-gray-600" : "hover:bg-ms-light-gray"}`}
+          >
+            <Link href="/">
+              <u>A</u>bout Me
+            </Link>
           </li>
           <li className="cursor-pointer px-4 hover:bg-ms-light-gray">
-            <u>M</u>y Projects
+            <Link href="/code-projects">
+              <u>C</u>ode Projects
+            </Link>
           </li>
           <li className="hidden cursor-pointer px-4 hover:bg-ms-light-gray sm:block">
             <u>W</u>eb Comic
