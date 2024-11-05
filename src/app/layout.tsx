@@ -9,6 +9,8 @@ import Canvas from "@/components/Canvas";
 import Tools from "@/components/Tools";
 import ColorPalette from "@/components/ColorPalette";
 
+import {isTodayFriday} from "@/utils/isTodayFriday";
+
 export const metadata: Metadata = {
   title: "Alex W. - Web Developer",
   description: "Open sky developer.",
@@ -19,6 +21,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+ 
+  const title = `alexwcreative.com${isTodayFriday() ? " - Happy Friday!" : ""}`;
+
   return (
     <html lang="en">
       <head>
@@ -51,7 +56,7 @@ export default function RootLayout({
             <Window
               size="w-[23rem] sm:w-[67rem]"
               defaultPos="ml-8 sm:ml-[23.125rem] sm:mt-10"
-              title="alexwcreative.com"
+              title={title}
             >
               <Navbar />
               <main className="relative grid h-full w-full grid-cols-[auto_1fr] grid-rows-[auto_1fr_auto] bg-ms-bronze-bg-ui">
@@ -66,9 +71,7 @@ export default function RootLayout({
                   className="h-full w-full overflow-hidden"
                 >
                   <div className="max-h-[40.25rem] overflow-auto">
-                    <Canvas>
-                      {children}
-                    </Canvas>
+                    <Canvas>{children}</Canvas>
                   </div>
                 </div>
                 <div id="bottom-container" className="col-span-2">

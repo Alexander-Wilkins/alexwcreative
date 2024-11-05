@@ -78,12 +78,6 @@ export default function Navbar() {
               <u>C</u>ode Projects
             </Link>
           </li>
-          <li className="hidden cursor-pointer px-4 hover:bg-ms-light-gray sm:block">
-            <Link href="https://www.pococomics.com" target='_blank'>
-              <FontAwesomeIcon icon={faExternalLink} className='h-[0.875rem] pr-1 pb-[.125rem]' />
-              <u>W</u>eb Comic
-            </Link>
-          </li>
           <li
             className={`cursor-pointer px-4 ${usePathname() === "/portfolio" ? "bg-ms-light-gray text-gray-600" : "hover:bg-ms-light-gray"}`}
           >
@@ -96,6 +90,12 @@ export default function Navbar() {
           >
             <Link href="/blog">
               <u>B</u>log
+            </Link>
+          </li>
+          <li className="hidden cursor-pointer px-4 hover:bg-ms-light-gray sm:block">
+            <Link href="https://www.pococomics.com" target='_blank'>
+              <FontAwesomeIcon icon={faExternalLink} className='h-[0.875rem] pr-1 pb-[.125rem]' />
+              <u>W</u>eb Comic
             </Link>
           </li>
         </ul>
