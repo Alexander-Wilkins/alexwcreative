@@ -71,7 +71,9 @@ export default function Navbar() {
               <u>A</u>bout Me
             </Link>
           </li>
-          <li className="cursor-pointer px-4 hover:bg-ms-light-gray">
+          <li
+            className={`cursor-pointer px-4 ${usePathname() === "/code-projects" ? "bg-ms-light-gray text-gray-600" : "hover:bg-ms-light-gray"}`}
+          >
             <Link href="/code-projects">
               <u>C</u>ode Projects
             </Link>
@@ -82,11 +84,19 @@ export default function Navbar() {
               <u>W</u>eb Comic
             </Link>
           </li>
-          <li className="hidden cursor-pointer px-4 hover:bg-ms-light-gray sm:block">
-            <u>I</u>llustration Portfolio
+          <li
+            className={`cursor-pointer px-4 ${usePathname() === "/portfolio" ? "bg-ms-light-gray text-gray-600" : "hover:bg-ms-light-gray"}`}
+          >
+            <Link href="/portfolio">
+              <u>I</u>llustration Portfolio
+            </Link>
           </li>
-          <li className="hidden cursor-pointer px-4 hover:bg-ms-light-gray sm:block">
-            <u>B</u>log
+          <li
+            className={`cursor-pointer px-4 ${usePathname() === "/blog" ? "bg-ms-light-gray text-gray-600" : "hover:bg-ms-light-gray"}`}
+          >
+            <Link href="/blog">
+              <u>B</u>log
+            </Link>
           </li>
         </ul>
       </nav>
