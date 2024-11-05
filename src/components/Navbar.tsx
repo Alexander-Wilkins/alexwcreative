@@ -1,4 +1,6 @@
 "use client";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faExternalLink } from '@fortawesome/free-solid-svg-icons'
 import { vt323 } from "@/fonts";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -75,7 +77,10 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="hidden cursor-pointer px-4 hover:bg-ms-light-gray sm:block">
-            <u>W</u>eb Comic
+            <Link href="https://www.pococomics.com" target='_blank'>
+              <FontAwesomeIcon icon={faExternalLink} className='h-[0.875rem] pr-1 pb-[.125rem]' />
+              <u>W</u>eb Comic
+            </Link>
           </li>
           <li className="hidden cursor-pointer px-4 hover:bg-ms-light-gray sm:block">
             <u>I</u>llustration Portfolio

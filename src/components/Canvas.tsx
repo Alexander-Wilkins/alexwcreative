@@ -53,7 +53,6 @@ export default function Canvas({ children }: { children: ReactNode }) {
           }}
         ></div>
         {children}
-
       </div>
     </div>
   );
