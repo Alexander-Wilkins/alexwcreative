@@ -9,7 +9,7 @@ import Canvas from "@/components/Canvas";
 import Tools from "@/components/Tools";
 import ColorPalette from "@/components/ColorPalette";
 
-import {isTodayFriday} from "@/utils/isTodayFriday";
+import { isTodayFriday } from "@/utils/isTodayFriday";
 
 export const metadata: Metadata = {
   title: "Alex W. - Web Developer",
@@ -21,7 +21,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
- 
   const title = `alexwcreative.com${isTodayFriday() ? " - Happy Friday!" : ""}`;
 
   return (
