@@ -1,14 +1,16 @@
-import Navbar from "@/components/Navbar";
-import Window from "@/components/Window";
-import Canvas from "@/components/Canvas";
-import Tools from "@/components/Tools";
-import ColorPalette from "@/components/ColorPalette";
+import Image from "next/image";
+import mainDrawing from "@/assets/imgs/main-page.png";
 
 export default function Home() {
   return (
     <div className="">
       {/* TODO: Make this an MSPaint Component, so that "Windows" are their own thing */}
-      <Window
+      <Image src={mainDrawing} alt="Test Drawing" quality={100} />
+      <Image src={mainDrawing} alt="Test Drawing" quality={100} />
+      <Image src={mainDrawing} alt="Test Drawing" quality={100} />
+      <Image src={mainDrawing} alt="Test Drawing" quality={100} />
+      <Image src={mainDrawing} alt="Test Drawing" quality={100} />
+      {/* <Window
         size="w-[23rem] sm:w-[67rem]"
         defaultPos="ml-8 sm:ml-[23.125rem] sm:mt-10"
         title="alexwcreative.com"
@@ -30,7 +32,7 @@ export default function Home() {
             <ColorPalette />
           </div>
         </main>
-      </Window>
+      </Window> */}
     </div>
   );
 }

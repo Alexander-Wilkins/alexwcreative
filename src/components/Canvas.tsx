@@ -1,7 +1,6 @@
-import Image from "next/image";
-import mainDrawing from "@/assets/imgs/main-page.png";
+import { ReactNode } from "react";
 
-export default function Canvas() {
+export default function Canvas({ children }: { children: ReactNode }) {
   return (
     <div>
       <div
@@ -53,13 +52,8 @@ export default function Canvas() {
             border: "1px solid #8498df",
           }}
         ></div>
-        
-          <Image src={mainDrawing} alt="Test Drawing" quality={100} />
-          <Image src={mainDrawing} alt="Test Drawing" quality={100} />
-          <Image src={mainDrawing} alt="Test Drawing" quality={100} />
-          <Image src={mainDrawing} alt="Test Drawing" quality={100} />
-          <Image src={mainDrawing} alt="Test Drawing" quality={100} />
-        
+        {children}
+
       </div>
     </div>
   );
