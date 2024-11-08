@@ -1,6 +1,7 @@
 {
   "name": "alexwcreative",
-  "version": "0.1.0",
+  "version": "0.2.0",
+  "description": "My personal website! 0.2.0 - MVP",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -12,6 +13,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@next/font": "^14.2.15",
     "@svgr/webpack": "^8.1.0",
     "next": "15.0.1",
     "react": "19.0.0-rc-69d4b800-20241021",
