@@ -4,7 +4,7 @@ const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig: NextConfig = {
   basePath: isProd ? "/alexwcreative" : "",
-  output: "export", // This will generate static HTML files
+  // output: "export", // This will generate static HTML files
   reactStrictMode: true,
   images: {
     unoptimized: true,

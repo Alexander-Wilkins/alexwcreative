@@ -1,8 +1,12 @@
-.DS_STORE
+# misc
+.DS_Store
+*.pem
+
 #env
 .*.env
 
 # next.js
+.next
 /.next/
 /out/
 /dist/
@@ -46,3 +50,6 @@ jspm_packages
 .node_repl_history
 .next
 
+# typescript
+*.tsbuildinfo
+next-env.d.ts
